@@ -1,0 +1,21 @@
+body{
+    background: #e5e5e5;
+}
+.section{
+    background-color: purple;
+    width: 50%;
+    gap: 15px;
+    padding-top: 5px;
+    margin: 50px 0px 30px 350px;
+}
+
+@media screen and (max-width: 600px){
+    .section{
+        width: 100%;
+        max-width: 100%;
+        margin: 0px;
+       
+        
+    }
+  
+}
