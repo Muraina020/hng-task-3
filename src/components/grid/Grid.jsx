@@ -5,6 +5,7 @@ import { useDrag, useDrop } from "react-dnd";
 import "./styles.css"
 
 import galleryList from "./data.js";
+import AuthDetails from "../auth/AuthDetails";
 
 const Card = ({ src, title, id, index, moveImage }) => {
   const ref = React.useRef(null);
@@ -101,6 +102,10 @@ const Grid = () => {
           value={searchQuery}
           onChange={handleSearchInputChange}
         />
+      </div>
+      <h2 className="authtext">HNGX INTERNSHIP</h2>
+      <div className="authDetails">
+      <AuthDetails/>
       </div>
       <h1 className="text">Gallery for Virtually Appealing Images</h1>
       <main>

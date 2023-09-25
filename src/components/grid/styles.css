@@ -89,6 +89,16 @@ main {
 .card img {
   object-fit: cover;
 }
+.authtext{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.authDetails{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
 
 .card__info {
   -webkit-user-select: none;
@@ -108,17 +118,33 @@ main {
     .searchInput{
         position: absolute;
         left: 12%;
-        top: 15%;
+        top: 22%;
     }
     .searchInput>input{
         width: 300px;
         height: 40px;
-       border: none;
+        border: none;
         border-radius: 15px;
         background: white;
-        padding: 5px 10px;
-        font-size: 12px;
+        font-size: 15px;
         color: grey;
+    }
+    .text{
+      font-size: 20px;
+      margin-top: 70px;
+     
+    }
+    .authDetails{
+      position: absolute;
+      right: 6px;
+      top: -20px;
+      font-size: 13px;
+    }
+    .authtext{
+      position: absolute;
+      left: 4px;
+      top: 5px;
+      font-size: 18px;
     }
 
 }

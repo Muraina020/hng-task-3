@@ -1,8 +1,4 @@
-// import './App.css';
-// import AuthDetails from './components/AuthDetails';
-// import Grid from './components/grid/Grid';
-// import SignIn from './components/auth/SignIn';
-// import SignUp from './components/auth/SignUp';
+
 import {
   BrowserRouter,
   Routes,

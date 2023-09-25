@@ -1,34 +1,50 @@
 .sign-in-container{
     display: flex;
     flex-direction: column;
+    gap: 15px;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
     color: grey;
-
 }
-
+.logreg{
+    margin: 15px 20px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+.active{
+    color: rgb(148, 148, 247);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 form>input{
-    width: 100%;
+    width: 350px;
     height: 40px;
     padding: 5px 10px;
+    color: #e5e5e5;
     font-size: 17px;
-    background: #e5e5e5;
-    border: none;
-    border: 10px;
-    margin-top: 15px;
-    border-radius: 5px;
+    border: 1px solid gray;
+    margin-top: 10px;
+    border-radius: 12px;
+    
+}
+.remember{
+    display: flex;
+    gap: 15px;
 }
 button{
-    width: 200px;
-    height: 50px;
+    width: 350px;
+    height: 40px;
     padding: 5px 10px;
-    font-size: 17px;
-    background: #e5e5e5;
     border: none;
-    border: 10px;
+    font-size: 17px;
+    background-color:rgb(148, 148, 247);
     margin-top: 15px;
-    border-radius: 5px;
+    border-radius: 12px;
 }
 
 .signout{
@@ -36,3 +52,22 @@ button{
   font-size: 15px;
   color: grey;
 }
+.signout>button{
+    background-color: rgb(161, 161, 234);
+    width: 200px;
+    height: 50px;
+}
+
+@media screen and (max-width: 600px){
+    .signout{
+        /* padding: 20px 0px;
+        font-size: 15px;
+        color: grey; */
+      }
+      .signout>button{
+          background-color: rgb(161, 161, 234);
+          width: 100px;
+          height: 35px;
+      }
+}
+
