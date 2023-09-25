@@ -23,12 +23,19 @@ const Auth = () => {
   const handleAuth = (e) => {
     e.preventDefault();
 
+    if (!email || !password) {
+      setErrorMessage("Please provide both email and password.");
+      return;
+    }
+
     if (isSignUp) {
       // Sign up
       createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           console.log(userCredential);
           // Handle sign-up success here
+          setLoginSuccess(true); // Automatically log in after successful sign-up
+          navigate("/grid");
         })
         .catch((error) => {
           console.error(error);
@@ -39,11 +46,8 @@ const Auth = () => {
       signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           console.log(userCredential);
-          // If the userCredential is present, login was successful
-          if (userCredential) {
-            setLoginSuccess(true);
-            navigate("/grid");
-          }
+          setLoginSuccess(true);
+          navigate("/grid");
         })
         .catch((error) => {
           switch (error.code) {
